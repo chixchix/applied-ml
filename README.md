@@ -1,19 +1,16 @@
-# applied-ml
-# Applied Machine Learning Implementations
+# Applied Machine Learning Fundamentals
 
-A collection of machine learning models and data pipelines implemented from scratch. These projects focus on exploring the underlying mathematics and internal logic of core algorithms, independent of high-level ML libraries.
+A collection of machine learning pipelines and models implemented from scratch. This repository focuses on exploring the mathematical foundations and logical architectures of core algorithms, moving beyond high-level abstractions to build robust data pipelines.
 
-# Key Projects & Metrics
-Model Implementations: Hand-coded models handling diverse datasets, including rental data, drone cost estimations, and MNIST.
+## Core Engineering Competencies
 
-Data Pipelines: End-to-end data cleaning, preprocessing, and feature engineering.
+* **Automated Preprocessing:** Architecting `ColumnTransformer` pipelines for mixed data types (imputation, scaling, encoding) to ensure schema consistency and prevent data leakage.
+* **Predictive Modeling:** Developing end-to-end models, including ensemble methods for behavioral classification and dual-approach modeling (Regression to Classification) for hardware cost estimation.
+* **Rigorous Evaluation:** Focusing on precision-recall trade-offs, Macro F1-scores, and cross-validation to navigate class imbalances and ensure model robustness.
+* **Data Sanitization:** Developing systematic protocols for handling corrupted datasets, missing values, and noisy feature inputs.
 
-Evaluation: Rigorous performance analysis focusing on navigating precision-recall trade-offs, maximizing F1-scores, and minimizing RMSE.
+## Repository Overview
 
-Data Engineering Pipeline: A comprehensive data preparation notebook focused strictly on cleaning, imputing missing values, and engineering categorical/numerical features to construct a model-ready dataset.
-
-Demographic & Behavioral Classification: A complex societal dataset by architecting automated preprocessing pipelines using ColumnTransformer for mixed data types (imputation, scaling, and encoding). Trained ensemble models (RandomForestClassifier) to predict categorical targets, validating model robustness via k-fold cross-validation and Macro F1-scores.
-
-Predictive Cost Modeling & Classification: Developed dual predictive models for hardware costs. Explored continuous cost estimation (Regression), then binarized the target variable to architect a classifier (SVC with RBF kernel), evaluated final precision and recall via a confusion matrix.
-
-
+* **Data Engineering Pipelines:** Notebooks focused on sanitization, feature engineering, and constructing model-ready datasets from raw inputs.
+* **Classification Frameworks:** Implementations of ensemble models for complex demographic and behavioral datasets, emphasizing reproducible pipeline design.
+* **Predictive Cost Analysis:** Workflows exploring the transition from continuous regression estimation to binarized binary classification.
